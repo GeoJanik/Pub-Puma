@@ -1,0 +1,28 @@
+body {
+    background-color: #0d0a1c;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    
+}
+
+#logo {
+    width: 35%;
+    margin-bottom: 30px;
+}
+
+#deo {
+    width: 25%;
+}
+
+#promo {
+    width: 60%;
+    align-self: center;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+}
