@@ -1,5 +1,7 @@
 body {
     background-color: #0d0a1c;
+    margin: auto;
+    margin-top: 15px;
 }
 
 header {
@@ -14,7 +16,7 @@ header {
 }
 
 #deo {
-    width: 25%;
+    width: 22%;
 }
 
 #promo {
@@ -22,7 +24,47 @@ header {
     align-self: center;
 }
 
-section {
+#logoImg {
     display: flex;
     justify-content: space-around;
+}
+
+p, h1 {
+    color: white;
+    
+}
+
+h1 {
+    font-size: 14px;
+}
+p{
+    margin: 0px;
+    font-size: 12px;
+}
+
+#paragraphe {
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#imgFooter{
+position: fixed;
+bottom: 0;
+width: 100%;
+}
+
+#map {
+    height: 132px;
+    width: 132px;
+    border-radius: 50%;
+    
+    margin: auto;
+}
+.fas{
+    color: #b39561;
 }

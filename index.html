@@ -1,32 +1,47 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
     <title>PUMA - ADOT</title>
 </head>
+
 <body>
     <header>
         <img id="logo" src="public/img/logo.png" alt="Deo Puma">
     </header>
 
-    <section>
+    <section id="logoImg">
         <img id="deo" src="public/img/deo.png" alt="">
         <img id="promo" src="public/img/promo.png" alt="">
     </section>
 
-    <footer>
-        <p>RETROUVE TON DEODORANT CHEZ</p>
+    <section id="paragraphe">
+        <h1>RETROUVE TON DEODORANT CHEZ</h1>
         <p>GEANT 49 ANGERS ANJOU</p>
         <p>1 RUE DU GRAND MONTREJEAU-CC A</p>
         <p>49000 ANGERS</p>
-        
         <div id="map"></div>
+    </section>
 
-        <img id="imgFooter" src="" alt="">
+    <footer>
+        <i class="fas fa-chevron-up"></i>
+        <img id="imgFooter" src="public/img/footer.png" alt="">
     </footer>
 
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+    <script src="https://kit.fontawesome.com/b0fe328ff4.js" crossorigin="anonymous"></script>
+
+
+    <script src="public/js/map.js"></script>
 </body>
+
 </html>
