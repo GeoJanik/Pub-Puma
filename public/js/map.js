@@ -3,6 +3,9 @@ class Carte {
         this.lattitudeMap = 48.89555632603661;
         this.longitudeMap = 2.2496143257227788;
         this.conteneurMap = document.getElementById("map");
+        this.slide = document.getElementById("slide").addEventListener('click', ()=> {
+            console.log('hello')
+        });
         this.initMap();
     }
 

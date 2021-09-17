@@ -6,8 +6,13 @@ body {
 
 header {
     display: flex;
-    justify-content: center;
-    
+    flex-direction: column;
+    align-items: center;
+
+}
+
+video{
+    width: 100%;
 }
 
 #logo {
@@ -29,15 +34,17 @@ header {
     justify-content: space-around;
 }
 
-p, h1 {
+p,
+h1 {
     color: white;
-    
+
 }
 
 h1 {
     font-size: 14px;
 }
-p{
+
+p {
     margin: 0px;
     font-size: 12px;
 }
@@ -49,22 +56,33 @@ p{
 footer {
     display: flex;
     flex-direction: column;
-    text-align: center;
+
+    align-items: center;
 }
 
-#imgFooter{
-position: fixed;
-bottom: 0;
-width: 100%;
+#imgFooter {
+    z-index: 1000;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 #map {
     height: 132px;
     width: 132px;
     border-radius: 50%;
-    
     margin: auto;
+    margin-top: 15px;
 }
-.fas{
+
+.fas {
     color: #b39561;
+    position: absolute;
+    bottom: 45px;
+    font-size: 30px;
+}
+
+#container {
+    position: absolute;
+    bottom: -188px;
 }
