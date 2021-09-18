@@ -2,9 +2,10 @@ class Slide {
     constructor() {
         this.slide = document.getElementById('slide');
         this.container = document.getElementById("container");
-        this.video = document.getElementsByTagName('video');
+        this.video = document.getElementById('testVideo');
         this.blockStyle();
         this.timer();
+        this.son();
 
     }
 
@@ -22,9 +23,14 @@ class Slide {
     }        
         
     timer() {
-        setTimeout(this.blockStyleTimer, 5000)
+        setTimeout(this.blockStyleTimer, 20000)
     }
 
+    son() {
+        this.video.addEventListener('click', ()=> {
+            this.video.muted = false;
+                })
+    }
 
 
 }
