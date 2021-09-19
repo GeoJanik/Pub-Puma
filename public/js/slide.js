@@ -3,6 +3,7 @@ class Slide {
         this.slide = document.getElementById('slide');
         this.container = document.getElementById("container");
         this.video = document.getElementById('testVideo');
+        console.log(this.video);
         this.blockStyle();
         this.timer();
         this.son();
@@ -14,16 +15,19 @@ class Slide {
         this.slide.addEventListener('click', () => {
             this.container.style.transitionDuration = "1s"
                 this.container.style.transform =  "translate(0px, -208px)";
+                this.video.style.visibility = "hidden"; 
             }) 
         }
                
     blockStyleTimer() {
                 this.container.style.transitionDuration = "1s"
-                this.container.style.transform =  "translate(0px, -208px)";      
+                this.container.style.transform =  "translate(0px, -208px)";   
+                console.log(this.video);
+                this.video.style.visibility = "hidden";   
     }        
         
     timer() {
-        setTimeout(this.blockStyleTimer, 20000)
+        setTimeout(() => this.blockStyleTimer(), 20000)
     }
 
     son() {
@@ -35,4 +39,4 @@ class Slide {
 
 }
 
-/* new Slide(); */
+new Slide();

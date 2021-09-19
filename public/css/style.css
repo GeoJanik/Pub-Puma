@@ -21,6 +21,13 @@ video{
     margin-bottom: 30px;
 }
 
+#textFooter {
+    position: fixed;
+    bottom: 9px;
+    z-index: 1001;
+    color: black;
+}
+
 #deo {
     width: 22%;
 }
