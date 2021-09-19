@@ -3,12 +3,11 @@ class Slide {
         this.slide = document.getElementById('slide');
         this.container = document.getElementById("container");
         this.video = document.getElementById('testVideo');
-        console.log(this.video);
         this.init();
     }
 
     init() {
-        this.slide.addEventListener('click', () => this.blockStyleTimer());
+        this.slide.addEventListener('click', () => this.hideVideo());
         setTimeout(() => this.hideVideo(), 20000);
         this.video.addEventListener('click', ()=> this.video.muted = false);
     }
