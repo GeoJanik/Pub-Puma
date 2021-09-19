@@ -1,9 +1,10 @@
 class Carte {
     constructor() {
-        this.lattitudeMap = 48.89555632603661;
-        this.longitudeMap = 2.2496143257227788;
+        this.lattitudeMap = 47.46459548453795;
+        this.longitudeMap = -0.5197535425381884;
         this.conteneurMap = document.getElementById("map");
         this.initMap();
+    
     }
 
     initMap() {

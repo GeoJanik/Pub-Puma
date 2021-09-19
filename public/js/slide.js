@@ -12,14 +12,14 @@ class Slide {
 
     blockStyle() {
         this.slide.addEventListener('click', () => {
-                this.container.style.transitionDuration = "1s";
-                this.container.style.bottom = "75px";
+            this.container.style.transitionDuration = "1s"
+                this.container.style.transform =  "translate(0px, -208px)";
             }) 
         }
                
     blockStyleTimer() {
-        this.container.style.transitionDuration = "1s";
-        this.container.style.bottom = "75px";
+                this.container.style.transitionDuration = "1s"
+                this.container.style.transform =  "translate(0px, -208px)";      
     }        
         
     timer() {
@@ -35,4 +35,4 @@ class Slide {
 
 }
 
-new Slide();
+/* new Slide(); */
