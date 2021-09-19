@@ -9,7 +9,6 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 video{
@@ -42,10 +41,9 @@ video{
     justify-content: space-around;
 }
 
-p,
+p, 
 h1 {
     color: white;
-
 }
 
 h1 {

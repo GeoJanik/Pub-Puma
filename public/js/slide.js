@@ -18,7 +18,6 @@ class Slide {
         this.container.style.transform =  "translate(0px, -208px)";   
         this.video.style.visibility = "hidden";   
     }        
-        
 }
 
 new Slide();
