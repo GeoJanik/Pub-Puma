@@ -11,7 +11,7 @@ class Carte {
 
         this.map = L.map('map', {
             zoomControl: false
-        }).setView([this.lattitudeMap, this.longitudeMap], 12);
+        }).setView([this.lattitudeMap, this.longitudeMap], 15);
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(this.map);
 
         /* CREATION DU MARKER SUR LA MAP */
