@@ -4,7 +4,6 @@ class Carte {
         this.longitudeMap = -0.5197535425381884;
         this.conteneurMap = document.getElementById("map");
         this.initMap();
-    
     }
 
     initMap() {

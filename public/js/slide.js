@@ -14,7 +14,6 @@ class Slide {
         this.slide.addEventListener('click', () => this.hideVideo());
         this.logoSon.addEventListener('click', ()=> this.video.muted = false);
         setTimeout(() => this.hideVideo(), 20000);
-
     }
           
     hideVideo() {
