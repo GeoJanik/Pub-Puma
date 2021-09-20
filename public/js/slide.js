@@ -23,12 +23,11 @@ class Slide {
         this.video.style.transform = "scale(0)";   
         this.video.style.transition = "transform 1s ease-in-out";
         this.slide.style.visibility = "hidden";
+        this.logoSon.style.visibility = "hidden";
         this.textFooter.textContent = "J'Y VAIS";
         this.map.style.transform = "scale(1.6)";
         this.map.style.transition = "transform 2s ease-in-out";
-        
-        
-        
+        this.video.muted = true;
     }        
 }
 
