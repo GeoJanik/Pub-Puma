@@ -4,6 +4,7 @@ class Slide {
         this.container = document.getElementById("container");
         this.video = document.getElementById('testVideo');
         this.slide = document.getElementById('slide');
+        this.logoSon = document.getElementById('logoSon');
         this.textFooter = document.getElementById('textFooter');
         this.map = document.getElementById('map');
         this.init();
@@ -11,7 +12,7 @@ class Slide {
 
     init() {
         this.slide.addEventListener('click', () => this.hideVideo());
-        this.video.addEventListener('click', ()=> this.video.muted = false);
+        this.logoSon.addEventListener('click', ()=> this.video.muted = false);
         setTimeout(() => this.hideVideo(), 20000);
 
     }
