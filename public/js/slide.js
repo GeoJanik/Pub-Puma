@@ -11,12 +11,12 @@ class Slide {
     }
 
     init() {
-        this.slide.addEventListener('click', () => this.hideVideo());
+        this.slide.addEventListener('click', () => this.startTransition());
         this.logoSon.addEventListener('click', ()=> this.video.muted = false);
-        setTimeout(() => this.hideVideo(), 20000);
+        setTimeout(() => this.startTransition(), 20000);
     }
           
-    hideVideo() {
+    startTransition() {
         this.container.style.transitionDuration = "1s";
         this.container.style.transform =  "translate(0px, -208px)";   
         this.video.style.transform = "scale(0)";   
